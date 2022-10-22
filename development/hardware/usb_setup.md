@@ -1,5 +1,5 @@
 <!--# Install Fuchsia from a USB flash drive-->
-# 从 USB 闪存驱动器安装Fuchsia
+# 从 USB 闪存驱动器安装 Fuchsia
 
 <!--You can use a USB flash drive to make your target device to boot from
 the Fuchsia installer, which then installs a freshly built Fuchsia
@@ -43,17 +43,17 @@ image on the device directly from the USB.-->
    ```
 
 <!--1. Create a bootable USB drive:-->
-1. 请创建一个可启动的 USB 驱动器：
+1. 创建一个可启动的 USB 驱动器：
 
    ```posix-terminal
    fx mkinstaller -v --new-installer {{ "<var>" }}PATH_TO_USB_DRIVE{{ "</var>"}}
    ```
 
    <!--Replace `PATH_TO_USB_DRIVE` with the path to the USB drive from the step above.-->
-   请将 `PATH_TO_USB_DRIVE` 替换为上述步骤中.
+   请将 `PATH_TO_USB_DRIVE` 替换为上述步骤中得到的 USB 驱动器路径.
 
    <!--The example command below selects the `/dev/sda` path:-->
-   请在下面的示例命令中选择 `/dev/sda` 路径：
+   下面的示例命令选取了 `/dev/sda` 路径：
 
    ``` none {:.devsite-disable-click-to-copy}
    $ fx mkinstaller -v --new-installer /dev/sda
@@ -93,7 +93,7 @@ image on the device directly from the USB.-->
 1. 请在出现提示时按 **Enter** 以继续安装过程。 
 
    <!--When the installation is finished, the screen displays `Success! Please restart your computer.`-->
-   在安装完成后，屏幕显示`Success! Please restart your computer.`
+   在安装完成后，屏幕显示 `Success! Please restart your computer.`
 
 <!--1. Unplug the USB drive from the target device.-->
 1. 请从目标设备上拔下 USB 驱动器。
@@ -102,4 +102,4 @@ image on the device directly from the USB.-->
 1. 请重新启动目标设备。
 
    <!--The target device is now booted into Fuchsia’s Workstation.-->
-   随后目标设备现在启动到 Fuchsia 的工作站（Workstation）。
+   目标设备现在会启动到 Fuchsia 的工作站（Workstation）。
